@@ -4,7 +4,7 @@ pragma solidity 0.8.18;
 /*
  * @author not-so-secure-dev
  * @title PasswordStore
- * @notice This contract allows you to store a private password that others won't be able to see. 
+ * @notice This contract allows you to store a private password that others won't be able to see.
  * You can update your password at any time.
  */
 contract PasswordStore {
@@ -24,6 +24,7 @@ contract PasswordStore {
      * @param newPassword The new password to set.
      */
     function setPassword(string memory newPassword) external {
+        /* should check to see if caller is the owner */
         s_password = newPassword;
         emit SetNetPassword();
     }
