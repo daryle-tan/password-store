@@ -11,12 +11,13 @@ contract PasswordStore {
     error PasswordStore__NotOwner();
 
     address private s_owner;
-    string private s_password;
+    string private s_password; // <@ password should not be stored on-chain because anyone can read from it
 
     event SetNetPassword();
 
     constructor() {
         s_owner = msg.sender;
+        /** Password isnt initialized here */
     }
 
     /*
