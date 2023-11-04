@@ -7,28 +7,11 @@ header-includes:
   - \usepackage{graphicx}
 ---
 
-\begin{titlepage}
-\centering
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.5\textwidth]{logo.pdf}
-\end{figure}
-\vspace\*{2cm}
-{\Huge\bfseries Protocol Audit Report\par}
-\vspace{1cm}
-{\Large Version 1.0\par}
-\vspace{2cm}
-{\Large\itshape Cyfrin.io\par}
-\vfill
-{\large \today\par}
-\end{titlepage}
-
-\maketitle
-
 <!-- Your report starts here! -->
 
 Prepared by: [Daryle Tan](https://daryle-tan.netlify.app/)
-Lead Auditors:
+
+Lead Auditors: Daryle Tan
 
 - xxxxxxx
 
@@ -56,7 +39,7 @@ Protocol does X, Y, Z
 
 # Disclaimer
 
-The YOUR_NAME_HERE team makes all effort to find as many vulnerabilities in the code in the given time period, but holds no responsibilities for the findings provided in this document. A security audit by the team is not an endorsement of the underlying business or product. The audit was time-boxed and the review of the code was solely on the security aspects of the Solidity implementation of the contracts.
+The Daryle Tan team makes all effort to find as many vulnerabilities in the code in the given time period, but holds no responsibilities for the findings provided in this document. A security audit by the team is not an endorsement of the underlying business or product. The audit was time-boxed and the review of the code was solely on the security aspects of the Solidity implementation of the contracts.
 
 # Risk Classification
 
@@ -87,6 +70,7 @@ anyone-can-read-storage
 # High
 
 lacking-access-control
+
 anyone-can-read-storage
 
 # Medium
